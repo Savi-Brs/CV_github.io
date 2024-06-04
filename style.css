@@ -1,0 +1,391 @@
+/* Styles for the Header */
+header {
+    background-image: url(Pictures/Port\ de\ lorient.jpeg); /* Image de fond de l'en-tête */
+    background-size: cover; /* Couvre toute la zone de l'en-tête */
+    background-position : center; /* Centre l'image de fond */
+    height: 450px; /* Hauteur de l'en-tête */
+    display: flex; /* Utilise flexbox pour le contenu de l'en-tête */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Aligne le texte au centre */
+    flex-direction: column; /* Arrange les éléments en colonne */
+    transition: height 0.3s; /* Animation de transition pour la hauteur */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour ajouter une bordure autour des images */
+.img-border {
+    border: 5px solid #3F98C4; /* Bordure de 5 pixels de couleur #3F98C4 */
+}
+
+/* Styles pour les paragraphes */
+p {
+    font-family: Calibri, sans-serif; /* Police de caractères */
+    font-size: 20px; /* Taille de la police */
+}
+
+/* Styles pour les éléments de liste */
+li {
+    font-family: Calibri, sans-serif; /* Police de caractères */
+    font-size: 18px; /* Taille de la police */
+}
+
+/* Styles pour les liens */
+a {
+    text-decoration: none; /* Supprime la décoration par défaut (soulignement) */
+    color: inherit; /* Utilise la couleur héritée du texte environnant */
+}
+
+/* Styles pour les listes personnalisées */
+.ul1 {
+    list-style: none; /* Supprime les puces par défaut */
+    padding-left: 20px; /* Marge interne à gauche */
+    background-image: url('Pictures/puce.png'); /* Image de fond pour les puces */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: 0 5px; /* Positionne l'image de la puce */
+    background-size: 16px 16px; /* Taille de l'image de la puce */
+}
+
+/* Styles pour les titres de niveau 2 */
+h2 {
+    font-family: Calibri, sans-serif; /* Police de caractères */
+    font-size: 30px; /* Taille de la police */
+}
+
+/* Styles pour les titres de niveau 3 */
+h3 {
+    font-family: Calibri, sans-serif; /* Police de caractères */
+    font-size: 25px; /* Taille de la police */
+    color: grey; /* Couleur du texte */
+}
+
+/* Styles pour les titres de niveau 4 */
+h4 {
+    font-family: Calibri, sans-serif; /* Police de caractères */
+    font-size: 25px; /* Taille de la police */
+    color: grey; /* Couleur du texte */
+    text-align: justify; /* Justifie le texte */
+}
+
+/* Styles pour les conteneurs en colonnes */
+.container {
+    display: flex; /* Utilise flexbox pour le contenu */
+    justify-content: space-between; /* Espace entre les colonnes */
+    margin-right: -20px; /* Compense l'espace entre les colonnes */
+}
+
+/* Styles pour chaque colonne */
+.colonne {
+    width: 45%; /* Largeur de chaque colonne */
+    padding: 10px; /* Marge interne */
+    border: 1px solid #ccc; /* Bordure de 1 pixel de couleur #ccc */
+    box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur totale */
+}
+
+/* Définition de la bordure pour les images */
+.img_plq {
+    border: 0.5px solid black; /* Bordure de 0.5 pixels, solide et noire */
+    display: block; /* Affichage en bloc */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    max-width: 100%; /* Largeur maximale de 100% du conteneur parent */
+    height: auto; /* Hauteur automatique */
+}
+
+/* Styles pour le conteneur du formulaire */
+.container {
+    color: black; /* Couleur du texte */
+    flex-direction: column; /* Arrange les éléments en colonne */
+    position: absolute; /* Position absolue par rapport au parent */
+    right: 20px; /* Positionne à 20px du bord droit */
+    margin: 20px; /* Marge autour du conteneur */
+    max-width: 200px; /* Largeur maximale de 200px */
+    padding: 16px; /* Espacement interne */
+    background-color: white; /* Couleur de fond blanche */
+}
+
+/* Styles pour les champs de texte et de mot de passe */
+input[type=text], input[type=password] {
+    width: 80%; /* Prend 80% de la largeur du conteneur */
+    padding: 15px; /* Espacement interne */
+    margin-bottom: 22px; /* Marge en bas pour séparer les champs */
+    border: none; /* Pas de bordure */
+    background: whitesmoke; /* Couleur de fond */
+}
+
+/* Styles pour la marge du contenu principal */
+main {
+    margin-left: 50px; /* Marge à gauche */
+}
+
+/* Styles pour les éléments avec la classe .tkt */
+.tkt {
+    flex-direction: column; /* Arrange les éléments en colonne */
+}
+
+/* Styles pour les liens dans .tkt */
+.tkt a {
+    margin-bottom: 10px; /* Marge en bas */
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+/* Styles pour les éléments avec la classe .marge */
+.marge {
+    margin-top: 0px; /* Pas de marge en haut */
+    background-color: whitesmoke; /* Couleur de fond */
+    color: green; /* Couleur du texte */
+    width: 200px; /* Largeur de 200px */
+    padding: 20px; /* Espacement interne */
+    height: auto; /* Hauteur automatique */
+    font-size: 18px; /* Taille de la police */
+    margin: 10px; /* Marge autour de l'élément */
+}
+
+/* Styles pour cacher des éléments */
+.hidden {
+    display: none; /* Cache l'élément */
+}
+
+/* Styles pour les éléments ciblés par l'ancre */
+#Diplômes:target, #Compétences:target, #ExpPro:target, #Centres_d_intérêt:target {
+    display: block; /* Affiche l'élément */
+}
+
+/* Styles pour les éléments avec la classe .centreG */
+.centreG {
+    margin-right: 40px; /* Marge à droite */
+    margin-left: 20px; /* Marge à gauche */
+}
+
+/* Styles pour les éléments avec la classe .centreD */
+.centreD {
+    margin-left: 0%; /* Pas de marge à gauche */
+    margin-right: 35px; /* Marge à droite */
+}
+
+/* Styles pour les lignes horizontales dans .centreG */
+.centreG hr {
+    width: 400px; /* Largeur de 400px */
+}
+
+/* Styles pour les lignes horizontales dans .centreD */
+.centreD hr {
+    width: 400px; /* Largeur de 400px */
+    margin-left: 0%; /* Pas de marge à gauche */
+}
+
+/* Styles pour les boutons */
+.button {
+    padding: 10px; /* Espacement interne */
+    font-size: 1rem; /* Taille de la police */
+    color: white; /* Couleur du texte */
+    font-weight: 600; /* Poids de la police */
+    transition: all .2s; /* Transition sur toutes les propriétés */
+    position: relative; /* Position relative pour le positionnement absolu des pseudo-éléments */
+    border: none; /* Pas de bordure */
+    background: black; /* Couleur de fond */
+    margin: 20px; /* Marge autour du bouton */
+    display: block; /* Affichage en bloc */
+    font-family: Calibri, sans-serif; /* Police de caractères */
+    font-size: 20px; /* Taille de la police */
+    cursor: pointer; /* Curseur pointeur au survol */
+    text-align: center; /* Texte centré */
+    white-space: nowrap; /* Pas de retour à la ligne automatique */
+    border-radius: 10px; /* Bordure arrondie */
+    overflow: hidden; /* Cache le contenu qui dépasse */
+}
+
+/* Pseudo-éléments avant et après pour les effets de survol */
+.button:before, .button:after {
+    content: ""; /* Contenu vide */
+    position: absolute; /* Position absolue */
+    top: 50%; /* Aligné verticalement au centre */
+    background: #3F98C4; /* Couleur de fond */
+    height: 100%; /* Hauteur de 100% */
+    width: 0; /* Largeur initiale de 0 */
+    z-index: -1; /* Derrière le contenu */
+    transition: all .7s; /* Transition sur toutes les propriétés */
+    transform: translateY(-50%); /* Centre verticalement */
+    border-radius: 10px; /* Bordure arrondie */
+}
+
+/* Effet de survol pour les boutons */
+.button:hover {
+    color: #fff; /* Couleur du texte */
+    box-shadow: #77CCFF 0 30px 60px -12px inset, #55AAFF 0 18px 36px -18px inset; /* Ombre interne */
+    z-index: 2; /* Au-dessus du contenu */
+}
+
+/* Effet de survol pour le pseudo-élément avant */
+.button:hover::before {
+    width: 100%; /* Largeur de 100% */
+    left: 0%; /* Positionné à gauche */
+}
+
+/* Effet de survol pour le pseudo-élément après */
+.button:hover::after {
+    width: 100%; /* Largeur de 100% */
+    right: 0%; /* Positionné à droite */
+}
+
+/* Styles pour les éléments avec la classe .clearfix */
+.clearfix::after {
+    content: ""; /* Contenu vide */
+    clear: both; /* Effet de clear flottant */
+    display: table; /* Affichage en tableau */
+}
+
+/* Styles pour les images flottant à droite */
+.image-droite {
+    float: right; /* Flotte à droite */
+    margin: 20px; /* Marge autour de l'image */
+}
+
+/* Styles pour centrer les éléments */
+.centrer {
+    display: flex; /* Utilise flexbox pour le contenu */
+    justify-content: center; /* Centre les éléments horizontalement */
+}
+
+/* Styles pour les titres avec la classe .title */
+.title {
+    text-align: center; /* Aligne le texte au centre */
+    color: white; /* Couleur du texte */
+    border-radius: 20px; /* Bordure arrondie */
+}
+
+/* Styles pour le conteneur avec la classe .background */
+.background {
+    width: 100%; /* Largeur de 100% */
+    height: 400px; /* Hauteur de 400px */
+    display: flex; /* Utilise flexbox pour le contenu */
+    flex-direction: column; /* Arrange les éléments en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Texte centré */
+    background-image: linear-gradient(to bottom, #3F98C4, #C4F8FE); /* Dégradé de fond */
+    background-size: cover; /* Couvre toute la zone */
+    background-repeat: no-repeat; /* Pas de répétition */
+    background-color: #77CCFF; /* Couleur de fond */
+    margin-top: 0px; /* Pas de marge en haut */
+    margin-bottom: 15px; /* Marge en bas */
+}
+
+/* Styles pour les éléments circulaires */
+.circle {
+    position: relative; /* Position relative pour les éléments absolus */
+    display: flex; /* Utilise flexbox pour le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 80vw; /* Largeur de 80% de la fenêtre */
+    height: 80vw; /* Hauteur de 80% de la fenêtre */
+    max-width: 170vh; /* Largeur maximale de 170% de la hauteur */
+    max-height: 170vh; /* Hauteur maximale de 170% de la hauteur */
+    border-radius: 50%; /* Forme circulaire */
+    border: 2px solid #000000; /* Bordure noire */
+    overflow: hidden; /* Cache le contenu qui dépasse */
+    shape-outside: circle(); /* Utilise le cercle comme forme extérieure */
+    clip-path: circle(); /* Utilise le cercle comme masque de découpe */
+}
+
+/* Styles pour chaque quart du cercle */
+.quarter {
+    position: absolute; /* Position absolue */
+    width: 50%; /* Largeur de 50% */
+    height: 50%; /* Hauteur de 50% */
+}
+
+/* Styles pour le quart supérieur gauche */
+.top-left {
+    top: 0; /* Positionné en haut */
+    left: 0; /* Positionné à gauche */
+    background-color: black; /* Couleur de fond noire */
+    text-align: right; /* Texte aligné à droite */
+    justify-content: center; /* Centre horizontalement */
+}
+
+/* Styles pour le quart supérieur droit */
+.top-right {
+    top: 0; /* Positionné en haut */
+    right: 0; /* Positionné à droite */
+    background-color: white; /* Couleur de fond blanche */
+}
+
+/* Styles pour le quart inférieur gauche */
+.bottom-left {
+    bottom: 0; /* Positionné en bas */
+    left: 0; /* Positionné à gauche */
+    background-color: white; /* Couleur de fond blanche */
+    text-align: right; /* Texte aligné à droite */
+    justify-content: center; /* Centre horizontalement */
+}
+
+/* Styles pour le quart inférieur droit */
+.bottom-right {
+    bottom: 0; /* Positionné en bas */
+    right: 0; /* Positionné à droite */
+    background-color: black; /* Couleur de fond noire */
+}
+
+/* Styles pour la classe .Expro */
+.Expro {
+    text-align: center; /* Texte centré */
+    margin-left: 0%; /* Pas de marge à gauche */
+    margin-right: 0%; /* Pas de marge à droite */
+}
+
+/* Styles pour les paragraphes dans .Expro */
+.Expro p {
+    display: flex; /* Utilise flexbox pour le contenu */
+    flex-direction: row; /* Arrange les éléments en ligne */
+    justify-content: center; /* Centre horizontalement */
+}
+
+/* Styles pour la classe .CI */
+.CI {
+    display: flex; /* Utilise flexbox pour le contenu */
+    flex-direction: column; /* Arrange les éléments en colonne */
+    align-items: center; /* Centre horizontalement */
+}
+
+/* Styles pour les rectangles avec triangle à droite */
+.rectangle-with-triangle-right {
+    width: 400px; /* Largeur de 400px */
+    height: 200px; /* Hauteur de 200px */
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 70% 100%, 0 100%); /* Découpe l'image en rectangle avec triangle */
+    position: relative; /* Position relative */
+}
+
+/* Styles pour les rectangles */
+.rectangle {
+    width: 1000px; /* Largeur de 1000px */
+    height: 200px; /* Hauteur de 200px */
+}
+
+/* Styles pour la position des éléments */
+.pos {
+    float: right; /* Flotte à droite */
+    margin-right: 200px; /* Marge à droite */
+    margin-top: 45px; /* Marge en haut */
+    font-weight: bold; /* Texte en gras */
+}
+
+.video{
+    text-align: center;
+    height: 400px;
+    margin: 30px;
+
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Rectangle occupant toute la page */
+.full-page-rectangle {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(196, 248, 254); /* Couleur du rectangle */
+}
